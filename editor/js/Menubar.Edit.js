@@ -7,7 +7,7 @@ Menubar.Edit = function ( editor ) {
 	container.onClick( function () { options.setDisplay( 'block' ) } );
 
 	var title = new UI.Panel();
-	title.setTextContent( 'Edit' ).setColor( '#666' );
+	title.setTextContent( 'Editar' ).setColor( '#666' );
 	title.setMargin( '0px' );
 	title.setPadding( '8px' );
 	container.add( title );
@@ -15,14 +15,14 @@ Menubar.Edit = function ( editor ) {
 	//
 
 	var options = new UI.Panel();
-	options.setClass( 'options' );
+	options.setClass( 'Opciones' );
 	options.setDisplay( 'none' );
 	container.add( options );
 
 	// clone
 
 	var option = new UI.Panel();
-	option.setClass( 'option' );
+	option.setClass( 'opcion' );
 	option.setTextContent( 'Clone' );
 	option.onClick( function () {
 
@@ -41,8 +41,8 @@ Menubar.Edit = function ( editor ) {
 	// flatten
 
 	var option = new UI.Panel();
-	option.setClass( 'option' );
-	option.setTextContent( 'Flatten' );
+	option.setClass( 'opcion' );
+	option.setTextContent( 'Aplanar' );
 	option.onClick( function () {
 
 		var object = editor.selected;
