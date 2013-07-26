@@ -71,7 +71,7 @@ Menubar.Edit = function ( editor ) {
 
 	var option = new UI.Panel();
 	option.setClass( 'option' );
-	option.setTextContent( 'Delete' );
+	option.setTextContent( 'Borrar' );
 	option.onClick( function () {
 
 		editor.removeObject( editor.selected );
